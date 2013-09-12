@@ -214,7 +214,7 @@ module Pygments
 
       begin
         # Timeout requests that take too long.
-        timeout_time = 8
+        timeout_time = 30
 
         Timeout::timeout(timeout_time) do
           # For sanity checking on both sides of the pipe when highlighting, we prepend and
